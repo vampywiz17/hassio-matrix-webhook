@@ -1,22 +1,30 @@
-name: matrix-webhook
+name: Matrix Webhook
 description: Home Assistant add-on for matrix-webhook using vampywiz17/matrix-webhook image.
+version: "0.0.1"
+slug: matrix-webhook
 url: https://github.com/vampywiz17/matrix-webhook
 image: vampywiz17/matrix-webhook
-arch: [ amd64, armv7 ]
+arch:
+  - amd64
+  - armv7
+
+startup: services
+boot: auto
+
 ingress: true
 ingress_port: 8000
 panel_icon: "mdi:chat"
 
-version: 0.0.1
-slug: matrix-webhook
-startup: services
-boot: auto
 ports:
   8000/tcp: 8006
 ports_description:
   8000/tcp: Webhook
+
+map:
+  - addons_config:rw
+
 options:
-  MESSAGE_FORMAT: yaml
+  MESSAGE_FORMAT: raw
   USE_MARKDOWN: false
   ALLOW_UNICODE: true
   DISPLAY_APP_NAME: true
@@ -67,6 +75,7 @@ schema:
   KNOWN_TOKENS:
     type: str
     name: Known Tokens
+
 environment:
   MESSAGE_FORMAT: "{{ MESSAGE_FORMAT }}"
   USE_MARKDOWN: "{{ USE_MARKDOWN }}"
@@ -79,6 +88,3 @@ environment:
   MATRIX_DEVICE: "{{ MATRIX_DEVICE }}"
   MATRIX_ADMIN_ROOM: "{{ MATRIX_ADMIN_ROOM }}"
   KNOWN_TOKENS: "{{ KNOWN_TOKENS }}"
-
-map:
-  - config:rw
