@@ -20,7 +20,7 @@ map:
 
 legacy: true
 options:
-  MESSAGE_FORMAT: raw
+  MESSAGE_FORMAT: json
   USE_MARKDOWN: false
   ALLOW_UNICODE: true
   DISPLAY_APP_NAME: true
