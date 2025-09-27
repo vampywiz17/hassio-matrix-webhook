@@ -52,3 +52,6 @@ environment:
   MATRIX_DEVICE: "{{ MATRIX_DEVICE }}"
   MATRIX_ADMIN_ROOM: "{{ MATRIX_ADMIN_ROOM }}"
   KNOWN_TOKENS: "{{ KNOWN_TOKENS }}"
+
+map:
+  - config:rw
