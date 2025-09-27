@@ -63,6 +63,7 @@ This Home Assistant add-on provides a webhook integration with Matrix. It allows
 
 Make a simple notify entity (with "rest" platform)
 ```
+notify:
   - name: webhook_notify
     platform: rest
     resource: "http://<your_home_assistant_ip>:8006/post/<token>"
@@ -100,8 +101,17 @@ message: Hello, this is a test message!
 app: test
 message: Hello, this is a test message!
 ```
+### Sending images from Home Assistant
 
-### Sending Images
+Simply make a Shell Command:
+```
+shell_command:
+  send_image: >
+    curl -X POST "http://<your_home_assistant_ip>:8006/post/<token>"
+    -F "image=@/path/to/image.png"
+    -F "caption=Test Image"
+```
+### Sending images from other service
 
 You can also send images to the Matrix room by using a `POST` request with the following format:
 
