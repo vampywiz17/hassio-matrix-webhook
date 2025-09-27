@@ -21,7 +21,7 @@ ports_description:
   8000/tcp: Webhook
 
 map:
-  - addons_config:rw
+  - config:rw
 
 options:
   MESSAGE_FORMAT: raw
@@ -38,13 +38,8 @@ options:
 
 schema:
   MESSAGE_FORMAT:
-    type: select
+    type: list(yaml|json|raw)
     name: Message Format
-    options:
-      - yaml
-      - json
-      - raw
-    default: raw
   USE_MARKDOWN:
     type: bool
     name: Use Markdown
