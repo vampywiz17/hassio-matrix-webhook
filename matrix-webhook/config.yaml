@@ -36,7 +36,7 @@ schema:
       - yaml
       - json
       - raw
-  default: raw
+    default: raw
   USE_MARKDOWN:
     type: bool
     name: Use Markdown
