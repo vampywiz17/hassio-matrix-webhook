@@ -1,0 +1,34 @@
+configuration:
+  MESSAGE_FORMAT:
+    name: Message Format
+    description: Format of the outgoing Matrix message (yaml, json, or raw)
+  USE_MARKDOWN:
+    name: Use Markdown
+    description: Enable Markdown formatting in Matrix messages
+  ALLOW_UNICODE:
+    name: Allow Unicode
+    description: Enable support for Unicode characters in messages
+  DISPLAY_APP_NAME:
+    name: Display App Name
+    description: Include the application name in the sent message
+  MATRIX_SERVER:
+    name: Matrix Server URL
+    description: URL of your Matrix homeserver (e.g. https://matrix.example.org)
+  MATRIX_SSLVERIFY:
+    name: Verify SSL
+    description: Enable SSL certificate verification when connecting to the Matrix server
+  MATRIX_USERID:
+    name: Matrix User ID
+    description: Matrix user ID for the bot (e.g. @bot:matrix.example.org)
+  MATRIX_PASSWORD:
+    name: Matrix Password
+    description: Password for the Matrix bot account
+  MATRIX_DEVICE:
+    name: Device Name
+    description: Unique identifier for the Matrix device (used for login)
+  MATRIX_ADMIN_ROOM:
+    name: Admin Room ID
+    description: Room ID to receive admin/debug messages (e.g. !abc123:matrix.example.org)
+  KNOWN_TOKENS:
+    name: Known Tokens
+    description: Comma-separated list of token-to-room ID pairs used for routing messages
