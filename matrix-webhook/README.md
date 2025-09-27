@@ -56,7 +56,8 @@ This Home Assistant add-on provides a webhook integration with Matrix. It allows
 ### Using Emojis for Verification
 
 - Emojis are used for basic verification of incoming webhook requests.
-- The user must include the correct emoji in the message for it to be processed.
+- You able to start verification a other client (for example Element). The addon automatically accept it.
+- You can verify the emojis in addon log.
 
 ### Home Assistant usage
 
@@ -75,7 +76,7 @@ Make a simple notify entity (with "rest" platform)
 
 To send a message, make a `POST` request to `http://<your_home_assistant_ip>:8006/post/<token>` with the following payload:
 
-***Please note that if you send data in JSON format and the key is "message," the add-on will automatically only forward the value. (This is necessary for Home Assistant compatibility.)***
+***Please note that if you send data in JSON format and the key is "message" the add-on will automatically only forward the value. (This is necessary for Home Assistant compatibility.)***
 
 **YAML Format:**
 
