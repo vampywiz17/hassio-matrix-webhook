@@ -11,10 +11,6 @@ arch:
 startup: services
 boot: auto
 
-ingress: true
-ingress_port: 8000
-panel_icon: "mdi:chat"
-
 ports:
   8000/tcp: 8006
 ports_description:
