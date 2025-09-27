@@ -21,7 +21,7 @@ ports_description:
   8000/tcp: Webhook
 
 map:
-  - config:rw
+  - addon_config:rw
 
 options:
   MESSAGE_FORMAT: raw
