@@ -37,39 +37,17 @@ options:
   KNOWN_TOKENS: "YOURSECRETTOKEN,!myroomid:matrix.example.org,Curl anOTheRToKen99,!myroomid2:matrix.example.org,Grafana"
 
 schema:
-  MESSAGE_FORMAT:
-    type: list(yaml|json|raw)
-    name: Message Format
-  USE_MARKDOWN:
-    type: bool
-    name: Use Markdown
-  ALLOW_UNICODE:
-    type: bool
-    name: Allow Unicode
-  DISPLAY_APP_NAME:
-    type: bool
-    name: Display App Name
-  MATRIX_SERVER:
-    type: str
-    name: Matrix Server URL
-  MATRIX_SSLVERIFY:
-    type: bool
-    name: Verify SSL
-  MATRIX_USERID:
-    type: str
-    name: Matrix User ID
-  MATRIX_PASSWORD:
-    type: str
-    name: Matrix Password
-  MATRIX_DEVICE:
-    type: str
-    name: Device Name
-  MATRIX_ADMIN_ROOM:
-    type: str
-    name: Admin Room ID
-  KNOWN_TOKENS:
-    type: str
-    name: Known Tokens
+  MESSAGE_FORMAT: list(yaml|json|raw)
+  USE_MARKDOWN: bool
+  ALLOW_UNICODE: bool
+  DISPLAY_APP_NAME: bool
+  MATRIX_SERVER: str
+  MATRIX_SSLVERIFY: bool
+  MATRIX_USERID: str
+  MATRIX_PASSWORD: str
+  MATRIX_DEVICE: str
+  MATRIX_ADMIN_ROOM: str
+  KNOWN_TOKENS: str
 
 environment:
   MESSAGE_FORMAT: "{{ MESSAGE_FORMAT }}"
