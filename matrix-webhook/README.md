@@ -79,11 +79,17 @@ notify:
     data_template:
       message: "{{ message }}"
 ```
+### Use with Apprise
+
+You able to use these Addon with Apprise, simply use "json" backend.
+```
+json://<your_home_assistant_ip>:8006/post/<token>?:version&:type&:title
+```
 ### Other usage
 
 To send a message, make a `POST` request to `http://<your_home_assistant_ip>:8006/post/<token>` with the following payload:
 
-***Please note that if you send data in JSON format and the key is "message" the add-on will automatically only forward the value. (This is necessary for Home Assistant compatibility.)***
+***Please note that if you send data in JSON format and the key is "message" the add-on will automatically only forward the value. (This is necessary for Home Assistant/Apprise compatibility.)***
 
 **YAML Format:**
 
