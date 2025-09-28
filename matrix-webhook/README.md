@@ -2,6 +2,8 @@
 
 This Home Assistant add-on provides a webhook integration with Matrix. It allows sending messages and images to a Matrix chat room from Home Assistant using an HTTP POST request. This add-on can be used to send both plain text and image content to specified Matrix rooms based on a predefined configuration.
 
+![Supports amd64 Architecture][amd64-shield] ![Supports armv7 Architecture][armv7-shield]
+
 ## Features
 
 - Send **plain text messages** to a specified Matrix room.
