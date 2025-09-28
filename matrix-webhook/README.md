@@ -53,16 +53,12 @@ This Home Assistant add-on provides a webhook integration with Matrix. It allows
     description: Comma-separated list of token-to-room ID pairs used for routing messages
 ```
 
-### Using Emojis for Verification
+## Generate token
 
-- Emojis are used for basic verification of incoming webhook requests.
-- You able to start verification a other client (for example Element). The addon automatically accept it.
-- You can verify the emojis in addon log.
+You able to use any token these restriction. Used characters: a–z,A–Z,0–9
 
-### Home Assistant usage
+Use generator, such as: https://it-tools.tech/token-generator or what you want.
 
-Make a simple notify entity (with "rest" platform)
-```
 notify:
   - name: webhook_notify
     platform: rest
