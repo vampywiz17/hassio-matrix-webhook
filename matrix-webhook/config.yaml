@@ -4,8 +4,7 @@ version: "0.0.1"
 slug: matrix-webhook
 url: https://github.com/vampywiz17/matrix-webhook
 image: vampywiz17/matrix-webhook
-arch:
-  - amd64
+arch: [ amd64, armv7 ]
 
 startup: services
 boot: auto
