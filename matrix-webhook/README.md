@@ -4,6 +4,8 @@ This Home Assistant add-on provides a webhook integration with Matrix. It allows
 
 ![Supports amd64 Architecture][amd64-shield] ![Supports armv7 Architecture][armv7-shield]
 
+Based on these repository (and i also add some modification like image support and HA optimalization): https://github.com/gabbysHub/matrix-webhook Thanks for that!
+
 ## Features
 
 - Send **plain text messages** to a specified Matrix room.
