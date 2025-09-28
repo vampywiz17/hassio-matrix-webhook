@@ -59,6 +59,16 @@ You able to use any token these restriction. Used characters: a–z,A–Z,0–9
 
 Use generator, such as: https://it-tools.tech/token-generator or what you want.
 
+### Using Emojis for Verification
+
+- Emojis are used for basic verification of incoming webhook requests.
+- You able to start verification a other client (for example Element). The addon automatically accept it.
+- You can verify the emojis in addon log.
+
+### Home Assistant usage
+
+Make a simple notify entity (with "rest" platform)
+```
 notify:
   - name: webhook_notify
     platform: rest
