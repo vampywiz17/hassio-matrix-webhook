@@ -138,3 +138,6 @@ The add-on supports both **encrypted** and **unencrypted** image uploads.
 ### Logging
 
 Logs can be accessed from the Home Assistant log interface. The add-on will log any errors related to Matrix authentication, message sending, and image uploads.
+
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
