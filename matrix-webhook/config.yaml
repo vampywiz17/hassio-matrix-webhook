@@ -7,7 +7,6 @@ image: vampywiz17/matrix-webhook
 arch: [ amd64, armv7 ]
 
 startup: services
-boot: auto
 
 ports:
   8000/tcp: 8006
