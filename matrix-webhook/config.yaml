@@ -22,6 +22,7 @@ options:
   USE_MARKDOWN: false
   ALLOW_UNICODE: true
   DISPLAY_APP_NAME: true
+  COMPATIBILITY: true
   MATRIX_SERVER: "https://matrix.example.org"
   MATRIX_SSLVERIFY: true
   MATRIX_USERID: "@myhook:matrix.example.org"
@@ -35,6 +36,7 @@ schema:
   USE_MARKDOWN: bool
   ALLOW_UNICODE: bool
   DISPLAY_APP_NAME: bool
+  COMPATIBILITY: bool
   MATRIX_SERVER: str
   MATRIX_SSLVERIFY: bool
   MATRIX_USERID: str
