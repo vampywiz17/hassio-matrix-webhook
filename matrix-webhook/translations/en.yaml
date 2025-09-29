@@ -11,6 +11,9 @@ configuration:
   DISPLAY_APP_NAME:
     name: Display App Name
     description: Include the application name in the sent message
+  COMPATIBILITY:
+    name: Home Assistant/Apprise compatibility
+    description: If enable, only the "value" will be send if the "key" are "message" in json mode
   MATRIX_SERVER:
     name: Matrix Server URL
     description: URL of your Matrix homeserver (e.g. https://matrix.example.org)
