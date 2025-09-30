@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+- Fix: The image not showing on Element Web and Windows/Linux app
+
 ## 0.0.2
 
 - add Compatibility option. If enable, only the "value" will be send if the "key" are "message" in json mode (it was hard coded on last release)
