@@ -1,6 +1,6 @@
 name: Matrix Webhook
 description: Home Assistant add-on for matrix-webhook using vampywiz17/matrix-webhook image.
-version: "0.0.3"
+version: "0.0.4"
 slug: matrix-webhook
 url: https://github.com/vampywiz17/matrix-webhook
 image: vampywiz17/matrix-webhook
