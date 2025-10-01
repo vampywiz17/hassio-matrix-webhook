@@ -3,7 +3,7 @@
 ## 0.0.4
 
 - Fix: "Error validating response: 'next_batch' is a required property" message in log
-- 
+
 ## 0.0.3
 
 - Fix: The image not showing on Element Web and Windows/Linux app
