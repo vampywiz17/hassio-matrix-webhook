@@ -65,9 +65,11 @@ Use generator, such as: https://it-tools.tech/token-generator or what you want.
 
 ### Using Emojis for Verification
 
-- Emojis are used for basic verification of incoming webhook requests.
-- You able to start verification a other client (for example Element). The addon automatically accept it.
-- You can verify the emojis in addon log.
+Emojis are used for basic device verification.
+
+You can start verification from another Matrix client, such as Element. The addon automatically accepts the request, and the emoji sequence can be checked in the addon log.
+
+Security note: this is a limited, headless verification flow. Since the addon accepts verification automatically and the emoji check is only visible in the log, it is less secure than normal manual verification in a Matrix client. If no human actually compares the emojis, it may create a false sense of trust.
 
 ### Home Assistant usage
 
