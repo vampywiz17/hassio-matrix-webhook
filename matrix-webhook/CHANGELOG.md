@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+- Implement error handling for send_image method
+- Change ignore_unverified_devices to False
+
 ## 0.0.4
 - Replace python:3.9-slim base to python:3.11-slim (because Python 3.9 EOL at October 30, 2025)
 - Fix: "Error validating response: 'next_batch' is a required property" message in log
